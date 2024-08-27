@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -564,6 +576,10 @@ video {
 
 .h-\[500px\] {
   height: 500px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -586,6 +602,10 @@ video {
   gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -593,4 +613,9 @@ video {
 .bg-rose-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 164 175 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
