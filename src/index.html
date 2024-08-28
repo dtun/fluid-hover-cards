@@ -41,7 +41,8 @@
           "grid grid-rows-[0fr] transition-all group-hover:grid-rows-[1fr]";
 
         let p = document.createElement("p");
-        p.className = "mt-2 overflow-hidden text-white/70";
+        p.className =
+          "mt-2 overflow-hidden text-white/70 opacity-0 group-hover:opacity-100 transition duration-300";
         p.textContent = `The card subtitle is here`;
 
         // Add pDiv to p
