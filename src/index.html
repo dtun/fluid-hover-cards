@@ -28,16 +28,19 @@
         img.src = `https://images.unsplash.com/photo-${imageIds[index]}?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlicmFudHxlbnwwfHwwfHx8MA%3D%3D`;
         img.alt = `image-${index}`;
 
-        let div = document.createElement("div");
-        div.className =
+        let content = document.createElement("div");
+        content.className =
           "absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black from-30%";
 
+        let contentWrapper = document.createElement("div");
+        contentWrapper.className = "w-48";
+
         let h2 = document.createElement("h2");
-        h2.className = "text-2xl text-white font-medium";
+        h2.className = "text-2xl text-white font-medium leading-tight";
         h2.textContent = `The card title is here`;
 
-        let pDiv = document.createElement("div");
-        pDiv.className =
+        let pWrapper = document.createElement("div");
+        pWrapper.className =
           "grid grid-rows-[0fr] transition-all group-hover:grid-rows-[1fr]";
 
         let p = document.createElement("p");
@@ -45,16 +48,18 @@
           "mt-2 overflow-hidden text-white/70 opacity-0 group-hover:opacity-100 transition duration-300";
         p.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iure.`;
 
-        // Add pDiv to p
-        pDiv.appendChild(p);
-        // Add h2 to div
-        div.appendChild(h2);
-        // Add p to div
-        div.appendChild(pDiv);
+        // Add pWrapper to p
+        pWrapper.appendChild(p);
+        // Add h2 to contentWrapper
+        contentWrapper.appendChild(h2);
+        // Add p to contentWrapper
+        contentWrapper.appendChild(pWrapper);
+        // Add contentWrapper to content
+        content.appendChild(contentWrapper);
         // Add image to li
         li.appendChild(img);
-        // Add div to li
-        li.appendChild(div);
+        // Add content to li
+        li.appendChild(content);
         // Add li to ul
         ul.appendChild(li);
       });
