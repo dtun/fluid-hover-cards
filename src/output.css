@@ -575,6 +575,10 @@ video {
   bottom: 0px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -605,6 +609,10 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.grid-rows-\[0fr\] {
+  grid-template-rows: 0fr;
 }
 
 .place-items-center {
@@ -675,10 +683,10 @@ video {
   transition-duration: 150ms;
 }
 
-.group:hover .group-hover\:h-auto {
-  height: auto;
-}
-
 .group:hover .group-hover\:h-\[100px\] {
   height: 100px;
+}
+
+.group:hover .group-hover\:grid-rows-\[1fr\] {
+  grid-template-rows: 1fr;
 }
