@@ -21,7 +21,7 @@
       [...Array(4)].forEach(function (_, index) {
         let li = document.createElement("li");
         li.className =
-          "relative h-[500px] w-full overflow-hidden rounded-2xl bg-rose-300 group";
+          "relative h-[500px] w-full overflow-hidden rounded-2xl bg-rose-300 group flex-1 hover:grow-[1.25] transition-all";
 
         let img = document.createElement("img");
         img.className = "absolute inset-0 w-full h-full object-cover";
@@ -43,7 +43,7 @@
         let p = document.createElement("p");
         p.className =
           "mt-2 overflow-hidden text-white/70 opacity-0 group-hover:opacity-100 transition duration-300";
-        p.textContent = `The card subtitle is here`;
+        p.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iure.`;
 
         // Add pDiv to p
         pDiv.appendChild(p);

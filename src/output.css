@@ -607,6 +607,10 @@ video {
   max-width: 72rem;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .grid-rows-\[0fr\] {
   grid-template-rows: 0fr;
 }
@@ -691,12 +695,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.hover\:grow-\[1\.25\]:hover {
+  flex-grow: 1.25;
 }
 
 .group:hover .group-hover\:grid-rows-\[1fr\] {
