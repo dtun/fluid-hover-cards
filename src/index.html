@@ -28,8 +28,25 @@
         img.src = `https://images.unsplash.com/photo-${imageIds[index]}?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlicmFudHxlbnwwfHwwfHx8MA%3D%3D`;
         img.alt = `image-${index}`;
 
+        let div = document.createElement("div");
+        div.className = "absolute inset-x-0 bottom-0 p-4";
+
+        let h2 = document.createElement("h2");
+        h2.className = "text-2xl text-white font-medium";
+        h2.textContent = `The card title is here`;
+
+        let p = document.createElement("p");
+        p.className = "text-white/70 mt-2";
+        p.textContent = `The card subtitle is here`;
+
+        // Add h2 to div
+        div.appendChild(h2);
+        // Add p to div
+        div.appendChild(p);
         // Add image to li
         li.appendChild(img);
+        // Add div to li
+        li.appendChild(div);
         // Add li to ul
         ul.appendChild(li);
       });
