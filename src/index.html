@@ -21,7 +21,7 @@
       [...Array(4)].forEach(function (_, index) {
         let li = document.createElement("li");
         li.className =
-          "relative h-[500px] w-full overflow-hidden rounded-2xl bg-rose-300";
+          "relative h-[500px] w-full overflow-hidden rounded-2xl bg-rose-300 group";
 
         let img = document.createElement("img");
         img.className = "absolute inset-0 w-full h-full object-cover";
@@ -37,7 +37,8 @@
         h2.textContent = `The card title is here`;
 
         let p = document.createElement("p");
-        p.className = "text-white/70 mt-2";
+        p.className =
+          "text-white/70 h-0 overflow-hidden group-hover:h-[100px] transition-all";
         p.textContent = `The card subtitle is here`;
 
         // Add h2 to div

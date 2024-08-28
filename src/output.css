@@ -575,16 +575,16 @@ video {
   bottom: 0px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-\[500px\] {
@@ -667,4 +667,18 @@ video {
 
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.group:hover .group-hover\:h-auto {
+  height: auto;
+}
+
+.group:hover .group-hover\:h-\[100px\] {
+  height: 100px;
 }
